@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <button id="botaoTema">Alternar Tema</button>
+
+    <div id="container">
+
+        <h1>Lista de Tarefas</h1>
+        <form id="form">
+
+            <input type="text" id="tarefa" placeholder="Adicione uma tarefa"
+            required autocomplete="off"> 
+            <button id="adic" onclick="executar()">Adicionar</button>
+            <button id="rem" onclick="removerTodos()">Remover tudo</button>
+
+        </form>
+
+    </div>
+
+    <div id="lista-container">
+
+        <h1>Suas Tarefas:</h1>
+        <ul id="lista"></ul>
+
+    </div>
+
+    <footer>
+        <strong>
+            <p>Desenvolvido por <a href="">Arthur Nunes</a></p>
+            <p>&copy; 2025-Todos os direitos reservados.</p>
+        </strong>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
