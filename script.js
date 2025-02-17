@@ -21,6 +21,17 @@ window.onload = function() {
 // Função para adicionar uma nova tarefa à lista
 function executar() {
     var tarefa = document.getElementById('tarefa').value;
+
+    // Verifica se a tarefa está vazia ou excede o limite de caracteres
+    if (tarefa.trim() === "") {
+        alert("Por favor, insira uma tarefa.");
+        return;
+    }
+    if (tarefa.length > 20) {
+        alert("A tarefa não pode exceder 20 caracteres.");
+        return;
+    }
+
     var lista = document.getElementById('lista');
     var remover = document.createElement('button');
     var item = document.createElement('li');
@@ -46,7 +57,7 @@ function executar() {
     item.style.alignItems = 'center';
     item.style.marginLeft = 'auto';
     item.style.marginRight = 'auto';
-    item.style.backgroundColor = 'f7b2b236';
+    item.style.backgroundColor = '#f7b2b236';
     item.style.boxShadow = '4px 4px 5px #000000a9';
     item.appendChild(remover);
     lista.appendChild(item);
@@ -57,6 +68,7 @@ function executar() {
     };
 
     salvarTarefas();
+    document.getElementById('tarefa').value = ""; // Limpa o campo de entrada
 }
 
 function salvarTarefas() {
@@ -98,7 +110,7 @@ function carregarTarefas() {
         item.style.width = '50%';
         item.style.marginLeft = 'auto';
         item.style.marginRight = 'auto';
-        item.style.backgroundColor = 'f7b2b236';
+        item.style.backgroundColor = '#f7b2b236';
         item.style.boxShadow = '4px 4px 5px #000000a9';
 
         remover.onclick = function() {
