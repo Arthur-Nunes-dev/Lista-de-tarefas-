@@ -103,7 +103,6 @@ body {
 /* Estilos para o tema escuro */
 body.tema-escuro {
     background-color: black;
-    color: white;
 }
 
 /* Estilos para o botão de alternar tema */
