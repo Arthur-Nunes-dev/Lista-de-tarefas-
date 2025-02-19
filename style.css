@@ -125,34 +125,3 @@ body.tema-escuro {
     background-color: #45a049;
 }
 
-/* Media queries para dispositivos móveis */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-    #container {
-        padding: 15px;
-        border-width: 3px;
-    }
-    #container input {
-        font-size: 14px;
-        padding: 8px;
-    }
-    #adic, #rem {
-        font-size: 14px;
-        padding: 8px;
-    }
-    #lista-container {
-        padding: 15px;
-        border-width: 3px;
-    }
-    #header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    #header button {
-        font-size: 14px;
-        padding: 8px;
-        margin-top: 10px;
-    }
-}
