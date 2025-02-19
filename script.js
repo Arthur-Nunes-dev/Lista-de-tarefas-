@@ -47,18 +47,6 @@ function executar() {
     remover.style.padding = '5px';
     remover.style.cursor = 'pointer';
     
-    item.style.listStyle = 'none';
-    item.style.marginTop = '10px';
-    item.style.padding = '5px';
-    item.style.border = '1px solid #00000000';
-    item.style.borderRadius = '5px';
-    item.style.display = 'flex';
-    item.style.justifyContent = 'space-between';
-    item.style.alignItems = 'center';
-    item.style.marginLeft = 'auto';
-    item.style.marginRight = 'auto';
-    item.style.backgroundColor = '#f7b2b236';
-    item.style.boxShadow = '4px 4px 5px #000000a9';
     item.appendChild(remover);
     lista.appendChild(item);
 
@@ -99,27 +87,13 @@ function carregarTarefas() {
         remover.style.padding = '5px';
         remover.style.cursor = 'pointer';
 
-        item.style.listStyle = 'none';
-        item.style.marginTop = '10px';
-        item.style.padding = '5px';
-        item.style.border = '1px solid #00000000';
-        item.style.borderRadius = '5px';
-        item.style.display = 'flex';
-        item.style.justifyContent = 'space-between';
-        item.style.alignItems = 'center';
-        item.style.width = '50%';
-        item.style.marginLeft = 'auto';
-        item.style.marginRight = 'auto';
-        item.style.backgroundColor = '#f7b2b236';
-        item.style.boxShadow = '4px 4px 5px #000000a9';
+        item.appendChild(remover);
+        lista.appendChild(item);
 
         remover.onclick = function() {
             lista.removeChild(item);
             salvarTarefas();
         };
-
-        item.appendChild(remover);
-        lista.appendChild(item);
     }
 }
 
